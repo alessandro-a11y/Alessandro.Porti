@@ -1,0 +1,99 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Portfolio Theme - Modern & Professional Dark */
+    --background: 220 15% 10%; /* Dark Slate Blue */
+    --foreground: 210 30% 90%; /* Light Grayish Blue */
+    
+    --card: 220 15% 15%; /* Slightly Lighter Slate Blue for Cards */
+    --card-foreground: 210 30% 85%;
+    
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 30% 85%;
+    
+    --primary: 200 80% 55%;   /* Bright Cerulean Blue */
+    --primary-foreground: 220 15% 10%; 
+    
+    --secondary: 25 90% 60%; /* Vibrant Orange for accents */
+    --secondary-foreground: 220 15% 10%;
+    
+    --accent: 140 70% 50%; /* Tech Green for highlights */
+    --accent-foreground: 220 15% 10%;
+
+    --muted: 220 10% 25%; 
+    --muted-foreground: 210 20% 60%; 
+    
+    --destructive: 0 70% 55%; 
+    --destructive-foreground: 210 30% 95%;
+    
+    --border: 220 15% 20%; 
+    --input: 220 15% 18%; 
+    --ring: 200 70% 65%; 
+    
+    --radius: 0.5rem; 
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-200;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Roboto', 'Open Sans', 'Montserrat', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+    font-family: 'Montserrat', sans-serif;
+  }
+  h1 { @apply text-4xl md:text-5xl font-bold text-primary; }
+  h2 { @apply text-3xl md:text-4xl text-foreground; }
+  h3 { @apply text-2xl md:text-3xl text-foreground/90; }
+
+  p {
+    @apply mb-4 text-foreground/80 max-w-prose;
+  }
+
+  section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-10 md:mb-12 text-center;
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.glass-card {
+  background: hsl(var(--card) / 0.6);
+  backdrop-filter: blur(10px) saturate(120%);
+  border: 1px solid hsl(var(--border) / 0.3);
+  @apply rounded-lg shadow-xl;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.7);
+  border-radius: var(--radius);
+  border: 2px solid hsl(var(--background));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
