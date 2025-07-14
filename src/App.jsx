@@ -40,20 +40,20 @@ const portfolioData = {
       title: "Classificador de Dados com Azure ML", 
       description: "Projeto simples de machine learning com automação no Azure ML Studio.", 
       technologies: ["Azure ML", "Python"],
-      link: "#" 
+      link: "https://github.com/alessandro-a11y/Classificador-de-Dados-com-Azure-ML" 
     },
     { 
       title: "Organizador de Arquivos", 
       description: "Script em Python que organiza arquivos automaticamente por extensão.", 
       technologies: ["Python"],
-      link: "#" 
+      link: "https://github.com/alessandro-a11y/Organizador-de-Arquivos" 
     },
   ],
   contact: {
     email: "figueiredoalessandro73@gmail.com",
     phone: "(87) 98111-3699",
     linkedin: "https://www.linkedin.com/in/alessandro-figueiredo-989706357/?trk=opento_sprofile_topcard",
-    github: "https://github.com/seu-usuario-github" 
+    github: "https://github.com/alessandro-a11y" 
   },
   quote: "Seja o tipo de desenvolvedor que você gostaria de ter na sua equipe."
 };
