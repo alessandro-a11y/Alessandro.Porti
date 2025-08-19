@@ -8,12 +8,13 @@ import Projects from '@/components/portfolio/Projects';
 import Contact from '@/components/portfolio/Contact';
 import Footer from '@/components/portfolio/Footer';
 import { Toaster } from '@/components/ui/toaster';
+//import { title } from 'process';
 
 const portfolioData = {
   name: "Alessandro Figueiredo Rodrigues",
   title: "Estudante de Engenharia de Software",
   bioIntro: "Apaixonado por tecnologia, dados e aprendizado contínuo.",
-  aboutMe: "Sou estudante de Engenharia de Software e estou dando meus primeiros passos na área de tecnologia com foco em ciência de dados, machine learning e desenvolvimento de software. Participo ativamente de cursos, desafios e projetos práticos, buscando aplicar tudo o que aprendo em soluções reais.",
+  aboutMe: "Estudante de Engenharia de Software (2° período), com sólida base em desenvolvimento Full Stack. Tenho conhecimentos em Python, JavaScript, React e PostgreSQL, além de experiência autodidata com projetos reais. Possuo interesse crescente por Inteligência Artificial e Machine Learning, com foco em especialização futura na área.",
   skills: [
     { name: "Python", icon: "🐍" },
     { name: "C", icon: "🇨" },
@@ -36,9 +37,21 @@ const portfolioData = {
     "Contribuindo em um Projeto Open Source – DIO",
   ],
   projects: [
-    { 
-      title: "Classificador de Dados com Azure ML", 
-      description: "Projeto simples de machine learning com automação no Azure ML Studio.", 
+    {
+      title: "Achadinhos Online",
+      description: "Desenvolvi o projeto Achadinhos Online, uma plataforma de promoções criada com HTML, CSS, JavaScript e React, com integração com banco de dados.",
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      link: "https://achadinhos-online-20252.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAadIiw7MJNuAkBqcDbzboPoQ2J1nJYeE3U76JNIuHM7jSN5EQwqKAhjonQ_Jlw_aem_bsP5ho7EbPzFkdkTmu6tKQ"
+    },
+    {
+      title: "Guia Prático da Kiwify",
+      description: "Plataforma web completa que ensina como iniciar do zero e realizar vendas todos os dias através da Kiwify, mesmo sem seguidores ou experiência prévia. Interface moderna e responsiva com sistema de navegação intuitivo para maximizar o aprendizado do usuário.",
+      technologies: ["React", "HTML", "CSS", "JavaScript"],
+      link: "https://kiwify-vendas-infinitas.vercel.app/"
+    },
+    {
+      title: "Classificador de Dados com Azure ML",
+      description: "Projeto simples de machine learning com automação no Azure ML Studio.",
       technologies: ["Azure ML", "Python"],
       link: "https://github.com/alessandro-a11y/Classificador-de-Dados-com-Azure-ML" 
     },

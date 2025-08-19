@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
@@ -16,7 +15,7 @@ const Footer = ({ name }) => {
           &copy; {new Date().getFullYear()} {name}. Todos os direitos reservados.
         </p>
         <p className="text-xs text-muted-foreground/80 flex items-center justify-center">
-          Feito com <Heart className="w-4 h-4 mx-1.5 text-primary animate-pulse" /> e React + TailwindCSS.
+          Feito com <Heart className="w-4 h-4 mx-1.5 text-primary animate-pulse" />
         </p>
       </div>
     </motion.footer>
