@@ -54,9 +54,9 @@ const Hero = ({ name, title, bioIntro, contact }) => {
               Ver Projetos
             </Button>
           </ScrollLink>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary text-primary hover:bg-primary/10 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105" onClick={() => window.open('/resume-placeholder.pdf', '_blank')}>
+          <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary text-primary hover:bg-primary/10 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105" onClick={() => window.open('/curriculo.html', '_blank')}>
             <Download className="mr-2 h-5 w-5" />
-            Download CV
+            Ver Currículo
           </Button>
         </motion.div>
 

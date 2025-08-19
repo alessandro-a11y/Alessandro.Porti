@@ -1,3 +1,4 @@
+// src/app/page.js
 import React from 'react';
 import PortfolioLayout from '@/components/portfolio/PortfolioLayout';
 import Hero from '@/components/portfolio/Hero';
@@ -10,10 +11,12 @@ import Footer from '@/components/portfolio/Footer';
 import { Toaster } from '@/components/ui/toaster';
 //import { title } from 'process';
 
+// Dados do portfólio. Adicionei o caminho do CV aqui para fácil acesso.
 const portfolioData = {
   name: "Alessandro Figueiredo Rodrigues",
   title: "Estudante de Engenharia de Software",
   bioIntro: "Apaixonado por tecnologia, dados e aprendizado contínuo.",
+  cvUrl: "./curriculo.html", // Caminho atualizado para o arquivo HTML
   aboutMe: "Estudante de Engenharia de Software (2° período), com sólida base em desenvolvimento Full Stack. Tenho conhecimentos em Python, JavaScript, React e PostgreSQL, além de experiência autodidata com projetos reais. Possuo interesse crescente por Inteligência Artificial e Machine Learning, com foco em especialização futura na área.",
   skills: [
     { name: "Python", icon: "🐍" },
@@ -45,7 +48,7 @@ const portfolioData = {
     },
     {
       title: "Guia Prático da Kiwify",
-      description: "Plataforma web completa que ensina como iniciar do zero e realizar vendas todos os dias através da Kiwify, mesmo sem seguidores ou experiência prévia. Interface moderna e responsiva com sistema de navegação intuitivo para maximizar o aprendizado do usuário.",
+      description: "| através da Kiwify, mesmo sem seguidores ou experiência prévia. Interface moderna e responsiva com sistema de navegação intuitivo para maximizar o aprendizado do usuário.",
       technologies: ["React", "HTML", "CSS", "JavaScript"],
       link: "https://kiwify-vendas-infinitas.vercel.app/"
     },
@@ -74,7 +77,13 @@ const portfolioData = {
 function App() {
   return (
     <PortfolioLayout>
-      <Hero name={portfolioData.name} title={portfolioData.title} bioIntro={portfolioData.bioIntro} contact={portfolioData.contact} />
+      <Hero 
+        name={portfolioData.name} 
+        title={portfolioData.title} 
+        bioIntro={portfolioData.bioIntro} 
+        contact={portfolioData.contact}
+        cvUrl={portfolioData.cvUrl} // Passando a URL do CV para o componente Hero
+      />
       <AboutMe content={portfolioData.aboutMe} />
       <Skills skills={portfolioData.skills} />
       <Certifications certifications={portfolioData.certifications} />
