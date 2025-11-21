@@ -41,16 +41,16 @@ const portfolioData = {
   ],
   projects: [
     {
-      title: "Achadinhos Online",
-      description: "Desenvolvi o projeto Achadinhos Online, uma plataforma de promoções criada com HTML, CSS, JavaScript e React, com integração com banco de dados.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
-      link: "https://achadinhos-online-20252.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAadIiw7MJNuAkBqcDbzboPoQ2J1nJYeE3U76JNIuHM7jSN5EQwqKAhjonQ_Jlw_aem_bsP5ho7EbPzFkdkTmu6tKQ"
+      title: "Teleportação quântica com Python",
+      description: "Simulação de um protocolo de teleportação quântica usando Python e a biblioteca Qiskit da IBM.",
+      technologies: ["Python", "Qiskit"],
+      link: "https://github.com/alessandro-a11y/quantum_teleportation_visual"
     },
     {
-      title: "Guia Prático da Kiwify",
-      description: "| através da Kiwify, mesmo sem seguidores ou experiência prévia. Interface moderna e responsiva com sistema de navegação intuitivo para maximizar o aprendizado do usuário.",
-      technologies: ["React", "HTML", "CSS", "JavaScript"],
-      link: "https://kiwify-vendas-infinitas.vercel.app/"
+      title: "Conversor de playlist do youtube pra mp3",
+      description: "Script em Python que baixa playlists do YouTube e converte os vídeos para arquivos MP3.",
+      technologies: ["Python", "ffmpeg", "yt-dlp"],
+      link: "https://github.com/alessandro-a11y/playList_python"
     },
     {
       title: "Classificador de Dados com Azure ML",
@@ -64,7 +64,14 @@ const portfolioData = {
       technologies: ["Python"],
       link: "https://github.com/alessandro-a11y/Organizador-de-Arquivos" 
     },
+        { 
+      title: "Abyss-Ventures", 
+      description: "Abyss Ventures: trading inteligente com design moderno, mockup interativo e site responsivo.", 
+      technologies: ["HTML", "CSS", "JavaScript"],
+      link: "https://abyss-ventures.vercel.app/" 
+    },
   ],
+
   contact: {
     email: "figueiredoalessandro73@gmail.com",
     phone: "(87) 98111-3699",
