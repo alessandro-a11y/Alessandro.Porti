@@ -4,8 +4,6 @@ import { Code2 } from 'lucide-react';
 
 const tecnologias = [
   { nome: "Python", imagem: "/tech-icons/python.png" },
-  { nome: "C", imagem: "/tech-icons/c.png" },
-  { nome: "Java", imagem: "/tech-icons/java.png" },
   { nome: "HTML", imagem: "/tech-icons/html.png" },
   { nome: "CSS", imagem: "/tech-icons/css.png" },
   { nome: "JavaScript", imagem: "/tech-icons/javascript.png" },
