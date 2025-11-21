@@ -11,7 +11,7 @@ const Footer = ({ name }) => {
       className="py-8 text-center border-t border-border/50 bg-card/50"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-sm text-muted-foreground mb-1">
+        <p className="text-sm text-muted-foreground mb-1" style={{ textAlign: "center" }}>
           &copy; {new Date().getFullYear()} {name}. Todos os direitos reservados.
         </p>
         <p className="text-xs text-muted-foreground/80 flex items-center justify-center">
